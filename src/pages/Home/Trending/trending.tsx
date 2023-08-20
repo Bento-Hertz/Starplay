@@ -24,7 +24,7 @@ export default function Trending() {
                         return <TrendMovie key={movie.title} lastChild={true} movie={movie}/>;
                     else
                         return <TrendMovie key={movie.title} movie={movie}/>;;
-                }
+                    }
                 )}
             </div>
         </section>
