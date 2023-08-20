@@ -1,0 +1,67 @@
+[
+    {
+        "title": "Beyond Earth",
+        "releaseDate": "2019",
+        "ageRestriction": "PG",
+        "trending": true,
+        "category": {
+            "name": "Movie",
+            "icon": "assets/icon-category-movie.svg"
+        },
+        "images": {
+            "regular": {
+                "small": "assets/thumbnails",
+                "medium": "assets/thumbnails",
+                "large": "assets/thumbnails"
+            },
+            "trending": {
+                "small": "assets/thumbnails/beyond-earth/trending/small.jpg",
+                "large": "assets/thumbnails/beyond-earth/trending/large.jpg"
+            }
+        }
+    },
+    {
+        "title": "Beyond Earths",
+        "releaseDate": "2019",
+        "ageRestriction": "PG",
+        "trending": true,
+        "category": {
+            "name": "Movie",
+            "icon": "assets/icon-category-movie.svg"
+        },
+        "images": {
+            "regular": {
+                "small": "assets/thumbnails",
+                "medium": "assets/thumbnails",
+                "large": "assets/thumbnails"
+            },
+            "trending": {
+                "small": "assets/thumbnails/beyond-earth/trending/small.jpg",
+                "large": "assets/thumbnails/beyond-earth/trending/large.jpg"
+            }
+        }
+    },
+
+
+    {
+        "title": "",
+        "releaseDate": "",
+        "ageRestriction": "",
+        "trending": false,
+        "category": {
+            "name": "",
+            "icon": ""
+        },
+        "images": {
+            "regular": {
+                "small": "assets/thumbnails",
+                "medium": "assets/thumbnails",
+                "large": "assets/thumbnails"
+            },
+            "trending": {
+                "small": "assets/thumbnails",
+                "large": "assets/thumbnails"
+            }
+        }
+    }
+]

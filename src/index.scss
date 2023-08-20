@@ -63,20 +63,20 @@ img {
 }
 body {
   background-color: $black;
-  padding: 82.8px 16px 16px;
+  // padding: 82.8px 16px 16px;
+  padding-top: 82.8px;
   @media(min-width: $tablet) {
-    padding: 138.4px 24px 0;
+    // padding: 138.4px 24px 0;
+    padding-top: 138.4px;
   }
   @media(min-width: $desktop) {
-    padding: 32px 32px 0 138.4px;
+    // padding: 32px 32px 0 138.4px;
+    padding-top: 48px;
+    padding-left: 138.4px;
   }
 }
 
-.title {
-  font-size: 32px;
-  letter-spacing: -0.5px;
-}
-
-.subtitle {
-  font-size: 24px;
+h1 {
+  font-size: 20px;
+  letter-spacing: -0.3px;
 }

@@ -1,0 +1,13 @@
+.trending {
+    display: grid;
+    gap: 16px;
+}
+
+.movies {
+    display: flex;
+    gap: 16px;
+    overflow-x: scroll;
+    img {
+        width: 240px;
+    }
+}

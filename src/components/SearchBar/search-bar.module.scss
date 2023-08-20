@@ -2,11 +2,10 @@
 
 .searchBar {
     display: grid;
-    grid-template-columns: auto 1fr;
+    grid-template-columns: 24px 1fr;
     grid-template-rows: 24px;
     align-items: center;
     gap: 16px;
-    
 }
 
 img {
