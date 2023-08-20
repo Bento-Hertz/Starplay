@@ -17,8 +17,14 @@ export default function Trending() {
         <section className={style.trending}>
             <h1>Trending</h1>
             <div className={style.movies}>
-                {trendMovies.map(movie => 
-                    <TrendMovie key={movie.title} {...movie}/>
+                {trendMovies.map((movie, index) => {
+                    if(index === 0) 
+                        return <TrendMovie key={movie.title} firstChild={true} movie={movie}/>;
+                    else if(index === trendMovies.length - 1)
+                        return <TrendMovie key={movie.title} lastChild={true} movie={movie}/>;
+                    else
+                        return <TrendMovie key={movie.title} movie={movie}/>;;
+                }
                 )}
             </div>
         </section>

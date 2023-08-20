@@ -2,7 +2,6 @@ export default interface Movie {
     title: string;
     releaseDate: string;
     ageRestriction: string;
-    trending: boolean;
     category: {
         name: string;
         icon: string;
@@ -13,7 +12,7 @@ export default interface Movie {
             medium: string;
             large: string;
         }
-        trending: {
+        trending?: {
             small: string;
             large: string;
         }

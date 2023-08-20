@@ -10,9 +10,9 @@
         },
         "images": {
             "regular": {
-                "small": "assets/thumbnails",
-                "medium": "assets/thumbnails",
-                "large": "assets/thumbnails"
+                "small": "assets/thumbnails/beyond-earth/regular/small.jpg",
+                "medium": "assets/thumbnails/beyond-earth/regular/medium.jpg",
+                "large": "assets/thumbnails/beyond-earth/regular/large.jpg"
             },
             "trending": {
                 "small": "assets/thumbnails/beyond-earth/trending/small.jpg",
@@ -21,8 +21,8 @@
         }
     },
     {
-        "title": "Beyond Earths",
-        "releaseDate": "2019",
+        "title": "Bottom Gear",
+        "releaseDate": "2021",
         "ageRestriction": "PG",
         "trending": true,
         "category": {
@@ -31,16 +31,80 @@
         },
         "images": {
             "regular": {
-                "small": "assets/thumbnails",
-                "medium": "assets/thumbnails",
-                "large": "assets/thumbnails"
+                "small": "assets/thumbnails/bottom-gear/regular/small.jpg",
+                "medium": "assets/thumbnails/bottom-gear/regular/medium.jpg",
+                "large": "assets/thumbnails/bottom-gear/regular/large.jpg"
             },
             "trending": {
-                "small": "assets/thumbnails/beyond-earth/trending/small.jpg",
-                "large": "assets/thumbnails/beyond-earth/trending/large.jpg"
+                "small": "assets/thumbnails/bottom-gear/trending/small.jpg",
+                "large": "assets/thumbnails/bottom-gear/trending/large.jpg"
             }
         }
     },
+    {
+        "title": "Undiscovered Cities",
+        "releaseDate": "2019",
+        "ageRestriction": "18+",
+        "trending": true,
+        "category": {
+            "name": "TV Series",
+            "icon": "assets/icon-category-tv.svg"
+        },
+        "images": {
+            "regular": {
+                "small": "assets/thumbnails/undiscovered-cities/regular/small.jpg",
+                "medium": "assets/thumbnails/undiscovered-cities/regular/medium.jpg",
+                "large": "assets/thumbnails/undiscovered-cities/regular/large.jpg"
+            },
+            "trending": {
+                "small": "assets/thumbnails/undiscovered-cities/trending/small.jpg",
+                "large": "assets/thumbnails/undiscovered-cities/trending/large.jpg"
+            }
+        }
+    },
+    {
+        "title": "1998",
+        "releaseDate": "2021",
+        "ageRestriction": "18+",
+        "trending": true,
+        "category": {
+            "name": "Movie",
+            "icon": "assets/icon-category-movie.svg"
+        },
+        "images": {
+            "regular": {
+                "small": "assets/thumbnails/1998/regular/small.jpg",
+                "medium": "assets/thumbnails/1998/regular/medium.jpg",
+                "large": "assets/thumbnails/1998/regular/large.jpg"
+            },
+            "trending": {
+                "small": "assets/thumbnails/1998/trending/small.jpg",
+                "large": "assets/thumbnails/1998/trending/large.jpg"
+            }
+        }
+    },
+    {
+        "title": "Dark Side of the Moon",
+        "releaseDate": "2018",
+        "ageRestriction": "PG",
+        "trending": true,
+        "category": {
+            "name": "TV Series",
+            "icon": "assets/icon-category-tv.svg"
+        },
+        "images": {
+            "regular": {
+                "small": "assets/thumbnails/dark-side-of-the-moon/regular/small.jpg",
+                "medium": "assets/thumbnails/dark-side-of-the-moon/regular/medium.jpg",
+                "large": "assets/thumbnails/dark-side-of-the-moon/regular/large.jpg"
+            },
+            "trending": {
+                "small": "assets/thumbnails/dark-side-of-the-moon/trending/small.jpg",
+                "large": "assets/thumbnails/dark-side-of-the-moon/trending/large.jpg"
+            }
+        }
+    },
+
 
 
     {
@@ -50,17 +114,17 @@
         "trending": false,
         "category": {
             "name": "",
-            "icon": ""
+            "icon": "../../public/assets/"
         },
         "images": {
             "regular": {
-                "small": "assets/thumbnails",
-                "medium": "assets/thumbnails",
-                "large": "assets/thumbnails"
+                "small": "../../public/assets/thumbnails",
+                "medium": "../../public/assets/thumbnails",
+                "large": "../../public/assets/thumbnails"
             },
             "trending": {
-                "small": "assets/thumbnails",
-                "large": "assets/thumbnails"
+                "small": "../../public/assets/thumbnails",
+                "large": "../../public/assets/thumbnails"
             }
         }
     }

@@ -2,21 +2,29 @@
 
 .searchBar {
     display: grid;
-    grid-template-columns: 24px 1fr;
+    grid-template-columns: auto 1fr;
     grid-template-rows: 24px;
     align-items: center;
     gap: 16px;
-}
-
-img {
-    height: 100%;
-}
-
-input {
-    padding: 8px;
-    height: 100%;
-    font-size: 16px;
+    margin: 24px 16px;
     @media(min-width: $tablet) {
-        font-size: 24px;
+        grid-template-rows: 32px;
+        margin: 32px 24px;
+    }
+    @media(min-width: $desktop) {
+        margin: 0 32px 32px;
+    }
+
+    img {
+        height: 100%;
+    }
+    
+    input {
+        padding: 8px;
+        height: 100%;
+        font-size: 16px;
+        @media(min-width: $tablet) {
+            font-size: 24px;
+        }
     }
 }
