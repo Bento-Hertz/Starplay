@@ -1,0 +1,57 @@
+@import 'styles/_variables.scss';
+
+.navbar {
+    position: fixed;
+    width: 100vw;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: $blue;
+    padding: 16px;
+    left: 0;
+    top: 0;
+    @media(min-width: $tablet) {
+        left: 24px;
+        top: 24px;
+        padding: 24px;
+        width: calc(100vw - 48px);
+        border-radius: 10px;
+    }
+    @media(min-width: $desktop) { 
+        flex-direction: column;
+        width: auto;
+        height: calc(100vh - 48px);
+    }
+}
+
+.logo img, .profileIcon img {
+    width: 24px;
+    @media(min-width: $tablet) { 
+        width: 32px;
+    }
+}
+
+.profileIcon img {
+    @media(min-width: $desktop) { 
+        width: 40px;
+    }
+}
+
+.navbar ul {
+    display: flex;
+    align-items: center;
+    gap: 24px;
+    @media(min-width: $tablet) {
+        gap: 32px;
+    }
+    @media(min-width: $desktop) { 
+        flex-direction: column;
+    }
+
+    img {
+        width: 16px;
+        @media(min-width: $tablet) {
+            width: 20px;
+        }
+    }
+}

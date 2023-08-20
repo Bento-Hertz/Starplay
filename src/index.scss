@@ -1,3 +1,6 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@300&display=swap');
+@import 'styles/variables';
+
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
@@ -49,6 +52,28 @@ table {
 	border-collapse: collapse;
 	border-spacing: 0;
 }
+img {
+  width: 100%;
+}
 * {
   box-sizing: border-box;
+  font-family: 'Outfit', sans-serif;
+  font-size: 15px;
+  color: $white;
+}
+body {
+  background-color: $black;
+  padding: 16px;
+  @media(min-width: $tablet) {
+    padding: 24px;
+  }
+}
+
+.title {
+  font-size: 32px;
+  letter-spacing: -0.5px;
+}
+
+.subtitle {
+  font-size: 24px;
 }
