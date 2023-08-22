@@ -39,6 +39,10 @@ button, input {
   background-color: transparent;
   border: none;
   padding: none;
+  outline: none;
+}
+button {
+  cursor: pointer;
 }
 blockquote, q {
 	quotes: none;
@@ -63,7 +67,7 @@ img {
 }
 body {
   height: 100%;
-  background-color: $black;
+  background-color: $dark-blue;
   padding-top: 58.8px;
   @media(min-width: $tablet) {
     padding-top: 106.4px;

@@ -7,6 +7,7 @@ import classNames from 'classnames';
 
 interface Props {
     movie: Movie;
+    id: number;
     firstChild?: boolean;
     lastChild?: boolean;
 }
@@ -14,11 +15,13 @@ interface Props {
 export default function TrendMovie(props: Props) {
 
     const {title, releaseDate, ageRestriction, category, images} = props.movie;
-    const {firstChild=false, lastChild=false} = props;
+    const {id, firstChild=false, lastChild=false} = props;
 
     //state for keeping track of the window's width
     const [windowWidth, setWindowWidth] = useState(window.innerWidth);
     const [currentImage, setCurrentImage] = useState('');
+    
+    const strId = `${id}`;
 
     //updates state of windowWidth
     const handleResize = () => {
@@ -51,7 +54,7 @@ export default function TrendMovie(props: Props) {
     }, [windowWidth]);
 
     return (
-        <div className={classNames({
+        <div id={strId} className={classNames({
             [style.movie]: true,
             [style.movie__firstChild]: firstChild,
             [style.movie__lastChild]: lastChild
