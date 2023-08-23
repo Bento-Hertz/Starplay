@@ -17,22 +17,15 @@ export default function TrendMovie(props: Props) {
     const {title, releaseDate, ageRestriction, category, images} = props.movie;
     const {id, firstChild=false, lastChild=false} = props;
 
-    //state for keeping track of the window's width
-    const [windowWidth, setWindowWidth] = useState(window.innerWidth);
     const [currentImage, setCurrentImage] = useState('');
     
     const strId = `${id}`;
 
-    //updates state of windowWidth
-    const handleResize = () => {
-        setWindowWidth(window.innerWidth);
-    }
-
     //changes state of currentImage based on the media query's breakpoint
-    const setImageSize = () => {
-        if(!(images.trending))
+    const setImgSize = () => {
+        if(!images.trending)
             return 0;
-        if(windowWidth > 768) {
+        if(window.innerWidth >= 768) {
             setCurrentImage(images.trending.large);
         }
         else {
@@ -41,17 +34,13 @@ export default function TrendMovie(props: Props) {
     }
 
     useEffect(() =>{
+        setImgSize();
         //adds a event listener when the component is loaded and removes it when the component is destructed
-        window.addEventListener('resize', handleResize);
+        window.addEventListener('resize', setImgSize);
         return () => {
-            window.removeEventListener('resize', handleResize);
+            window.removeEventListener('resize', setImgSize);
         }
     },[]);
-
-    //calls handleResize() every time the window is resized
-    useEffect(() => {
-        setImageSize();
-    }, [windowWidth]);
 
     return (
         <div id={strId} className={classNames({
@@ -72,7 +61,7 @@ export default function TrendMovie(props: Props) {
                         <span>{category.name}</span>
                     </div>
                     <div className={style.smallDot}></div>
-                    <span>{ageRestriction}</span>
+                    <span className={style.ageRestriction}>{ageRestriction}</span>
                 </div>
                 <h2>{title}</h2>
             </div>

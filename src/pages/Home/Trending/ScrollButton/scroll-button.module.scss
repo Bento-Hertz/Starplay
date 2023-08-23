@@ -1,9 +1,5 @@
 @import 'styles/_variables.scss';
 
-.scroll {
-    
-}
-
 .scrollBack, .scrollFront {
     display: none;
     z-index: 2;
@@ -18,7 +14,7 @@
         display: flex;
         align-items: center;
         padding: 0 48px;
-        transition: 1s;
+        transition: 0.5s;
     }
 }
 

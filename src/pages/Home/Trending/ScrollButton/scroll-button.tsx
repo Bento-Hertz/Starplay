@@ -35,7 +35,7 @@ export default function ScrollButton(props: Props) {
     }
 
     //returns a new current movie id
-    function destination(increment: number) {
+    function destination(increment: number) {        
         const newId = onIncrementingId(increment);
         if(newId < 0)
             return '0';
