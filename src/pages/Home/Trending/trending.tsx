@@ -1,4 +1,4 @@
-import { useEffect, useState } from 'react';
+import { useState } from 'react';
 import TrendMovie from './TrendMovie/trend-movie';
 import style from './trending.module.scss';
 import movies from 'data/movies.json';
@@ -6,15 +6,10 @@ import ScrollButton from './ScrollButton/scroll-button';
 
 export default function Trending() {
 
-    const [trendMovies, setTrendMovies] = useState(movies);
     const [currentMovieId, setCurrentMovieId] = useState('0');
     
     //filtering movies when loading this component
-    useEffect(() => {
-        const filteredMovies = movies.filter(movie => movie.trending === true);
-        setTrendMovies(filteredMovies);
-    }, []);
-    
+    const trendMovies = movies.filter(movie => movie.trending === true); 
 
     return (
         <section className={style.trending}>

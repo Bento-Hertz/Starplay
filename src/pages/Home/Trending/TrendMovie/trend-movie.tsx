@@ -48,7 +48,9 @@ export default function TrendMovie(props: Props) {
             [style.movie__firstChild]: firstChild,
             [style.movie__lastChild]: lastChild
         })}>
-            <img className={style.movieImage} src={currentImage} alt={title} />
+            <div className={style.movieImage}>
+                <img src={currentImage} alt="" />
+            </div>
             <div className={style.info}>
                 <button className={style.bookmark}>
                     <img src={bookmarkIcon} alt="bookmark" />
@@ -57,7 +59,7 @@ export default function TrendMovie(props: Props) {
                     <span>{releaseDate}</span>
                     <div className={style.smallDot}></div>
                     <div className={style.category}>
-                        <img src={category.icon} alt={category.name} />
+                        <img src={category.icon} alt="" />
                         <span>{category.name}</span>
                     </div>
                     <div className={style.smallDot}></div>

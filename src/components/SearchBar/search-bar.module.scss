@@ -14,17 +14,17 @@
     @media(min-width: $desktop) {
         margin: 0 32px 32px;
     }
+}
 
-    img {
-        height: 100%;
-    }
-    
-    input {
-        padding: 8px;
-        height: 100%;
-        font-size: 16px;
-        @media(min-width: $tablet) {
-            font-size: 24px;
-        }
+.searchIcon {
+   width: 32px;
+}
+
+.searchField {
+    padding: 8px;
+    height: 100%;
+    font-size: 16px;
+    @media(min-width: $tablet) {
+        font-size: 24px;
     }
 }

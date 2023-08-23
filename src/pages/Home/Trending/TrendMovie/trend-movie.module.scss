@@ -36,10 +36,14 @@
 }
 
 .movieImage {
-    border-radius: 8px;
     width: 240px;
+    height: 142.4px;
     @media(min-width: $tablet) {
         width: 470px;
+        height: 234.4px;
+    }
+    img {
+        border-radius: 8px;
     }
 }
 
