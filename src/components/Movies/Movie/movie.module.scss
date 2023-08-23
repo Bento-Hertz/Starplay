@@ -1,0 +1,84 @@
+@import 'styles/_variables.scss';
+
+.movie {
+    position: relative;
+    display: grid;
+    gap: 8px;
+    @media(min-width: $tablet) {
+        h3 {
+            font-size: 24px;
+        }
+    }
+}
+
+
+.image {
+    overflow: hidden;
+    border-radius: 8px;
+    padding-top: 65%;
+    position: relative;
+    img {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+    }
+}
+
+.bookmark {
+    position: absolute;
+    top: 8px;
+    right: 8px;
+    display: flex;
+    place-content: center;
+    padding: 10px;
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+    background-color: $transparent-dark-blue;
+}
+
+
+.description {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    opacity: 75%;
+    font-size: 13px;
+    @media(min-width: $tablet) {
+        font-size: 16px;
+    }
+    .smallDot, .smallDot2 {
+        width: 3px;
+        height: 3px;
+        border-radius: 50%;
+        background-color: $white;
+        opacity: 75%;
+    }
+    .smallDot2 {
+        display: none;
+        @media(min-width: $tablet) {
+            display: block;
+        }
+    }
+    .category {
+        display: flex;
+        align-items: center;
+        gap: 4px;
+        img {
+            width: 12px;
+            height: 12px;
+        }
+    }
+    .ageRestriction {
+        @media(max-width: $tablet) {
+            background-color: $transparent-dark-blue;
+            padding: 4px 8px;
+            border-radius: 20px;
+            position: absolute;
+            top: 8px;
+            left: 8px;
+        }
+    }
+}

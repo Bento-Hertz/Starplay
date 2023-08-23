@@ -1,5 +1,5 @@
 /* eslint-disable react-hooks/exhaustive-deps */
-import Movie from 'interfaces/Movie';
+import Movie from 'interfaces/IMovie';
 import style from './trend-movie.module.scss';
 import { useEffect, useState } from 'react';
 import bookmarkIcon from 'assets/icon-bookmark-empty.svg';
@@ -62,10 +62,10 @@ export default function TrendMovie(props: Props) {
                         <img src={category.icon} alt="" />
                         <span>{category.name}</span>
                     </div>
-                    <div className={style.smallDot}></div>
+                    {currentImage === images.trending?.large ? <div className={style.smallDot}></div> : <></>}
                     <span className={style.ageRestriction}>{ageRestriction}</span>
                 </div>
-                <h2>{title}</h2>
+                <h3>{title}</h3>
             </div>
         </div>
     );

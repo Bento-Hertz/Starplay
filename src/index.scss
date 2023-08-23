@@ -64,6 +64,7 @@ img {
   font-family: 'Outfit', sans-serif;
   font-size: 16px;
   color: $white;
+  -webkit-tap-highlight-color: transparent;
 }
 body {
   height: 100%;

@@ -9,11 +9,7 @@
             "icon": "assets/icon-category-movie.svg"
         },
         "images": {
-            "regular": {
-                "small": "assets/thumbnails/beyond-earth/regular/small.jpg",
-                "medium": "assets/thumbnails/beyond-earth/regular/medium.jpg",
-                "large": "assets/thumbnails/beyond-earth/regular/large.jpg"
-            },
+            "regular": "assets/thumbnails/beyond-earth/regular/large.jpg",
             "trending": {
                 "small": "assets/thumbnails/beyond-earth/trending/small.jpg",
                 "large": "assets/thumbnails/beyond-earth/trending/large.jpg"
@@ -30,11 +26,7 @@
             "icon": "assets/icon-category-movie.svg"
         },
         "images": {
-            "regular": {
-                "small": "assets/thumbnails/bottom-gear/regular/small.jpg",
-                "medium": "assets/thumbnails/bottom-gear/regular/medium.jpg",
-                "large": "assets/thumbnails/bottom-gear/regular/large.jpg"
-            },
+            "regular": "assets/thumbnails/bottom-gear/regular/large.jpg",
             "trending": {
                 "small": "assets/thumbnails/bottom-gear/trending/small.jpg",
                 "large": "assets/thumbnails/bottom-gear/trending/large.jpg"
@@ -51,11 +43,7 @@
             "icon": "assets/icon-category-tv.svg"
         },
         "images": {
-            "regular": {
-                "small": "assets/thumbnails/undiscovered-cities/regular/small.jpg",
-                "medium": "assets/thumbnails/undiscovered-cities/regular/medium.jpg",
-                "large": "assets/thumbnails/undiscovered-cities/regular/large.jpg"
-            },
+            "regular": "assets/thumbnails/undiscovered-cities/regular/large.jpg",
             "trending": {
                 "small": "assets/thumbnails/undiscovered-cities/trending/small.jpg",
                 "large": "assets/thumbnails/undiscovered-cities/trending/large.jpg"
@@ -72,11 +60,7 @@
             "icon": "assets/icon-category-movie.svg"
         },
         "images": {
-            "regular": {
-                "small": "assets/thumbnails/1998/regular/small.jpg",
-                "medium": "assets/thumbnails/1998/regular/medium.jpg",
-                "large": "assets/thumbnails/1998/regular/large.jpg"
-            },
+            "regular": "assets/thumbnails/1998/regular/large.jpg",
             "trending": {
                 "small": "assets/thumbnails/1998/trending/small.jpg",
                 "large": "assets/thumbnails/1998/trending/large.jpg"
@@ -93,39 +77,323 @@
             "icon": "assets/icon-category-tv.svg"
         },
         "images": {
-            "regular": {
-                "small": "assets/thumbnails/dark-side-of-the-moon/regular/small.jpg",
-                "medium": "assets/thumbnails/dark-side-of-the-moon/regular/medium.jpg",
-                "large": "assets/thumbnails/dark-side-of-the-moon/regular/large.jpg"
-            },
+            "regular": "assets/thumbnails/dark-side-of-the-moon/regular/large.jpg",
             "trending": {
                 "small": "assets/thumbnails/dark-side-of-the-moon/trending/small.jpg",
                 "large": "assets/thumbnails/dark-side-of-the-moon/trending/large.jpg"
             }
         }
     },
-
-
-
     {
-        "title": "",
-        "releaseDate": "",
-        "ageRestriction": "",
+        "title": "The Great Lands",
+        "releaseDate": "2019",
+        "ageRestriction": "E",
         "trending": false,
         "category": {
-            "name": "",
-            "icon": "../../public/assets/"
+            "name": "Movie",
+            "icon": "assets/icon-category-movie.svg"
         },
         "images": {
-            "regular": {
-                "small": "../../public/assets/thumbnails",
-                "medium": "../../public/assets/thumbnails",
-                "large": "../../public/assets/thumbnails"
-            },
-            "trending": {
-                "small": "../../public/assets/thumbnails",
-                "large": "../../public/assets/thumbnails"
-            }
+            "regular": "assets/thumbnails/the-great-lands/regular/large.jpg"
+        }
+    },
+    {
+        "title": "The Diary",
+        "releaseDate": "2019",
+        "ageRestriction": "PG",
+        "trending": false,
+        "category": {
+            "name": "TV Series",
+            "icon": "assets/icon-category-tv.svg"
+        },
+        "images": {
+            "regular": "assets/thumbnails/the-diary/regular/large.jpg"
+        }
+    },
+    {
+        "title": "Earth's Untouched",
+        "releaseDate": "2017",
+        "ageRestriction": "18+",
+        "trending": false,
+        "category": {
+            "name": "Movie",
+            "icon": "assets/icon-category-movie.svg"
+        },
+        "images": {
+            "regular": "assets/thumbnails/earths-untouched/regular/large.jpg"
+        }
+    },
+    {
+        "title": "No Land Beyond",
+        "releaseDate": "2019",
+        "ageRestriction": "E",
+        "trending": false,
+        "category": {
+            "name": "Movie",
+            "icon": "assets/icon-category-movie.svg"
+        },
+        "images": {
+            "regular": "assets/thumbnails/no-land-beyond/regular/large.jpg"
+        }
+    },
+    {
+        "title": "During the Hunt",
+        "releaseDate": "2016",
+        "ageRestriction": "PG",
+        "trending": false,
+        "category": {
+            "name": "TV Series",
+            "icon": "assets/icon-category-tv.svg"
+        },
+        "images": {
+            "regular": "assets/thumbnails/during-the-hunt/regular/large.jpg"
+        }
+    },
+    {
+        "title": "Autosport the Series",
+        "releaseDate": "2016",
+        "ageRestriction": "18+",
+        "trending": false,
+        "category": {
+            "name": "TV Series",
+            "icon": "assets/icon-category-tv.svg"
+        },
+        "images": {
+            "regular": "assets/thumbnails/autosport-the-series/regular/large.jpg"
+        }
+    },
+    {
+        "title": "Same Answer II",
+        "releaseDate": "2017",
+        "ageRestriction": "E",
+        "trending": false,
+        "category": {
+            "name": "Movie",
+            "icon": "assets/icon-category-movie.svg"
+        },
+        "images": {
+            "regular": "assets/thumbnails/same-answer-2/regular/large.jpg"
+        }
+    },
+    {
+        "title": "Below Echo",
+        "releaseDate": "2016",
+        "ageRestriction": "PG",
+        "trending": false,
+        "category": {
+            "name": "TV Series",
+            "icon": "assets/icon-category-tv.svg"
+        },
+        "images": {
+            "regular": "assets/thumbnails/below-echo/regular/large.jpg"
+        }
+    },
+    {
+        "title": "The Rockies",
+        "releaseDate": "2015",
+        "ageRestriction": "E",
+        "trending": false,
+        "category": {
+            "name": "TV Series",
+            "icon": "assets/icon-category-tv.svg"
+        },
+        "images": {
+            "regular": "assets/thumbnails/the-rockies/regular/large.jpg"
+        }
+    },
+    {
+        "title": "Relentless",
+        "releaseDate": "2017",
+        "ageRestriction": "PG",
+        "trending": false,
+        "category": {
+            "name": "Movie",
+            "icon": "assets/icon-category-movie.svg"
+        },
+        "images": {
+            "regular": "assets/thumbnails/relentless/regular/large.jpg"
+        }
+    },
+    {
+        "title": "Commumnity of Ours",
+        "releaseDate": "2018",
+        "ageRestriction": "18+",
+        "trending": false,
+        "category": {
+            "name": "TV Series",
+            "icon": "assets/icon-category-tv.svg"
+        },
+        "images": {
+            "regular": "assets/thumbnails/community-of-ours/regular/large.jpg"
+        }
+    },
+    {
+        "title": "Van Life",
+        "releaseDate": "2015",
+        "ageRestriction": "PG",
+        "trending": false,
+        "category": {
+            "name": "Movie",
+            "icon": "assets/icon-category-movie.svg"
+        },
+        "images": {
+            "regular": "assets/thumbnails/van-life/regular/large.jpg"
+        }
+    },
+    {
+        "title": "The Heiress",
+        "releaseDate": "2021",
+        "ageRestriction": "PG",
+        "trending": false,
+        "category": {
+            "name": "Movie",
+            "icon": "assets/icon-category-movie.svg"
+        },
+        "images": {
+            "regular": "assets/thumbnails/the-heiress/regular/large.jpg"
+        }
+    },
+    {
+        "title": "Off the Track",
+        "releaseDate": "2017",
+        "ageRestriction": "18+",
+        "trending": false,
+        "category": {
+            "name": "Movie",
+            "icon": "assets/icon-category-movie.svg"
+        },
+        "images": {
+            "regular": "assets/thumbnails/off-the-track/regular/large.jpg"
+        }
+    },
+    {
+        "title": "Whispering Hill",
+        "releaseDate": "2017",
+        "ageRestriction": "E",
+        "trending": false,
+        "category": {
+            "name": "Movie",
+            "icon": "assets/icon-category-movie.svg"
+        },
+        "images": {
+            "regular": "assets/thumbnails/whispering-hill/regular/large.jpg"
+        }
+    },
+    {
+        "title": "112",
+        "releaseDate": "2013",
+        "ageRestriction": "PG",
+        "trending": false,
+        "category": {
+            "name": "TV Series",
+            "icon": "assets/icon-category-tv.svg"
+        },
+        "images": {
+            "regular": "assets/thumbnails/112/regular/large.jpg"
+        }
+    },
+    {
+        "title": "Lone Heart",
+        "releaseDate": "2017",
+        "ageRestriction": "E",
+        "trending": false,
+        "category": {
+            "name": "Movie",
+            "icon": "assets/icon-category-movie.svg"
+        },
+        "images": {
+            "regular": "assets/thumbnails/lone-heart/regular/large.jpg"
+        }
+    },
+    {
+        "title": "Production Line",
+        "releaseDate": "2018",
+        "ageRestriction": "PG",
+        "trending": false,
+        "category": {
+            "name": "TV Series",
+            "icon": "assets/icon-category-tv.svg"
+        },
+        "images": {
+            "regular": "assets/thumbnails/production-line/regular/large.jpg"
+        }
+    },
+    {
+        "title": "Dogs",
+        "releaseDate": "2016",
+        "ageRestriction": "E",
+        "trending": false,
+        "category": {
+            "name": "TV Series",
+            "icon": "assets/icon-category-tv.svg"
+        },
+        "images": {
+            "regular": "assets/thumbnails/dogs/regular/large.jpg"
+        }
+    },
+    {
+        "title": "Asia in 24 Days",
+        "releaseDate": "2020",
+        "ageRestriction": "PG",
+        "trending": false,
+        "category": {
+            "name": "TV Series",
+            "icon": "assets/icon-category-tv.svg"
+        },
+        "images": {
+            "regular": "assets/thumbnails/asia-in-24-days/regular/large.jpg"
+        }
+    },
+    {
+        "title": "The Tasty Tour",
+        "releaseDate": "2023",
+        "ageRestriction": "PG",
+        "trending": false,
+        "category": {
+            "name": "TV Series",
+            "icon": "assets/icon-category-tv.svg"
+        },
+        "images": {
+            "regular": "assets/thumbnails/the-tasty-tour/regular/large.jpg"
+        }
+    },
+    {
+        "title": "Darker",
+        "releaseDate": "2017",
+        "ageRestriction": "18+",
+        "trending": false,
+        "category": {
+            "name": "Movie",
+            "icon": "assets/icon-category-movie.svg"
+        },
+        "images": {
+            "regular": "assets/thumbnails/darker/regular/large.jpg"
+        }
+    },
+    {
+        "title": "Unresolved Cases",
+        "releaseDate": "2023",
+        "ageRestriction": "18+",
+        "trending": false,
+        "category": {
+            "name": "TV Series",
+            "icon": "assets/icon-category-tv.svg"
+        },
+        "images": {
+            "regular": "assets/thumbnails/unresolved-cases/regular/large.jpg"
+        }
+    },
+    {
+        "title": "Mission: Saturn",
+        "releaseDate": "2017",
+        "ageRestriction": "PG",
+        "trending": false,
+        "category": {
+            "name": "Movie",
+            "icon": "assets/icon-category-movie.svg"
+        },
+        "images": {
+            "regular": "assets/thumbnails/mission-saturn/regular/large.jpg"
         }
     }
 ]

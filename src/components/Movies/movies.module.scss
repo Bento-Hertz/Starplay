@@ -1,0 +1,28 @@
+@import 'styles/_variables.scss';
+
+.container {
+    display: grid;
+    gap: 16px;
+    padding: 16px;
+    @media(min-width: $tablet) {
+        padding: 24px;
+    }
+    @media(min-width: $desktop) {
+        padding: 32px;
+    }
+}
+.movies {
+    display: grid;
+    align-items: start;
+    grid-template-columns: 1fr 1fr;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 16px;
+    @media(min-width: $tablet) {
+        grid-template-columns: 1fr 1fr 1fr;
+        gap: 24px;
+    }
+    @media(min-width: $desktop) {
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+    }
+}
