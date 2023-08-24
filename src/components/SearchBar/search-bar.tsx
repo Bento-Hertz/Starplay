@@ -7,7 +7,7 @@ export default function SearchBar() {
             <div className={style.searchIcon}>
                 <img src={searchIcon} alt="search" />
             </div>
-            <input className={style.searchField} type="text" placeholder='Search for movies or Tv Series'/>
+            <input className={style.searchField} type="text" placeholder='Search for movies or TV series'/>
         </div>
     );
 }

@@ -1,37 +1,58 @@
 import style from './navbar.module.scss';
 import logo from 'assets/logo.svg';
+import profileIcon from 'assets/image-avatar.png';
+import { Link, useLocation } from 'react-router-dom';
 import homeIcon from 'assets/navbar/icon-nav-home.svg';
 import moviesIcon from 'assets/navbar/icon-nav-movies.svg';
 import tvSeriesIcon from 'assets/navbar/icon-nav-tv-series.svg';
 import bookmarkIcon from 'assets/navbar/icon-nav-bookmark.svg';
-import profileIcon from 'assets/image-avatar.png';
-import { Link } from 'react-router-dom';
+import activeHomeIcon from 'assets/navbar/active/icon-nav-home.svg';
+import activeMoviesIcon from 'assets/navbar/active/icon-nav-movies.svg';
+import activeTvSeriesIcon from 'assets/navbar/active/icon-nav-tv-series.svg';
+import activeBookmarkIcon from 'assets/navbar/active/icon-nav-bookmark.svg';
 
 export default function Navbar() {
+
     return (
         <nav className={style.navbar}>
-            <a className={style.logo} href='typescript:void(0)'>
+            <Link className={style.logo} to='/'>
                 <img src={logo} alt="logo" />
-            </a>
+            </Link>
             <ul>
                 <li>
                     <Link to='/'>
-                        <img src={homeIcon} alt="home" />
+                        {true ?
+                            <img src={homeIcon} alt="home" />
+                        : 
+                            <img src={activeHomeIcon} alt="home" />
+                        }
+                    </Link>
+                </li>
+                <li>
+                    <Link to='movies'>
+                        {true ?
+                            <img src={moviesIcon} alt="movies" />
+                        : 
+                            <img src={activeMoviesIcon} alt="movies" />
+                        }
+                    </Link>
+                </li>
+                <li>
+                    <Link to='tv-series'>
+                        {true ?
+                            <img src={tvSeriesIcon} alt="tv series" />
+                        : 
+                            <img src={activeTvSeriesIcon} alt="tv series" />
+                        }
                     </Link>
                 </li>
                 <li>
                     <a href='typescript:void(0)'>
-                        <img src={moviesIcon} alt="movies" />
-                    </a>
-                </li>
-                <li>
-                    <Link to='/tv-series'>
-                        <img src={tvSeriesIcon} alt="tv series" />
-                    </Link>
-                </li>
-                <li>
-                    <a href='typescript:void(0)'>
-                        <img src={bookmarkIcon} alt="bookmark" />
+                        {true ?
+                            <img src={bookmarkIcon} alt="bookmarked" />
+                        : 
+                            <img src={activeBookmarkIcon} alt="bookmarked" />
+                        }
                     </a>
                 </li>
             </ul>

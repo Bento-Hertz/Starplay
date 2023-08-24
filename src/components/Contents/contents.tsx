@@ -16,7 +16,7 @@ export default function Contents(props: Props) {
             <h1>{category}</h1>
             <div className={style.contents}>
                 {contentList.map(content => 
-                    <Content {...content}/>
+                    <Content key={content.title} {...content}/>
                 )}
             </div>
         </section>
