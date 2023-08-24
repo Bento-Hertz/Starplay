@@ -5,6 +5,7 @@ import moviesIcon from 'assets/navbar/icon-nav-movies.svg';
 import tvSeriesIcon from 'assets/navbar/icon-nav-tv-series.svg';
 import bookmarkIcon from 'assets/navbar/icon-nav-bookmark.svg';
 import profileIcon from 'assets/image-avatar.png';
+import { Link } from 'react-router-dom';
 
 export default function Navbar() {
     return (
@@ -14,9 +15,9 @@ export default function Navbar() {
             </a>
             <ul>
                 <li>
-                    <a href='typescript:void(0)'>
+                    <Link to='/'>
                         <img src={homeIcon} alt="home" />
-                    </a>
+                    </Link>
                 </li>
                 <li>
                     <a href='typescript:void(0)'>
@@ -24,9 +25,9 @@ export default function Navbar() {
                     </a>
                 </li>
                 <li>
-                    <a href='typescript:void(0)'>
+                    <Link to='/tv-series'>
                         <img src={tvSeriesIcon} alt="tv series" />
-                    </a>
+                    </Link>
                 </li>
                 <li>
                     <a href='typescript:void(0)'>

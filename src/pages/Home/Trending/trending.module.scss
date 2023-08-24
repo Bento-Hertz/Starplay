@@ -14,11 +14,11 @@
     }
 }
 
-.movies {
+.contents {
     display: flex;
     overflow-x: scroll;
 }
 
-.movies::-webkit-scrollbar {
+.contents::-webkit-scrollbar {
     display: none;
 }

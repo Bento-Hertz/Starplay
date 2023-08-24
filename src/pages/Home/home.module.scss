@@ -1,4 +1,12 @@
+@import 'styles/_variables.scss';
+
 .home {
     display: grid;
-    gap: 16px;
+    gap: 32px;
+    @media(min-width: $tablet) {
+        gap: 40px;
+    }
+    @media(min-width: $desktop) {
+        gap: 48px;
+    }
 }

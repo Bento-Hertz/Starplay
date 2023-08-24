@@ -1,6 +1,6 @@
 @import 'styles/_variables.scss';
 
-.movie {
+.content {
     position: relative;
     display: grid;
     gap: 8px;
@@ -10,7 +10,6 @@
         }
     }
 }
-
 
 .image {
     overflow: hidden;

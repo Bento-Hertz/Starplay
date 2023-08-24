@@ -1,16 +1,16 @@
-import Movies from 'components/Movies/movie-list';
 import Trending from './Trending/trending';
 import style from './home.module.scss';
-import movieList from 'data/movies.json';
+import contentList from 'data/contents.json';
+import Contents from 'components/Contents/contents';
 
 export default function Home() {
 
-    const recommendedMovies = movieList.filter(movie => movie.trending === false);
+    const recommendedContents = contentList.filter(content => content.trending === false);
 
     return (
         <main className={style.home}>
             <Trending />
-            <Movies category='Recommended for you' movieList={recommendedMovies}/>
+            <Contents category='Recommended for you' contentList={recommendedContents}/>
         </main>
     );
 }

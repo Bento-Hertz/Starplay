@@ -1,14 +1,8 @@
-import Navbar from "components/Navbar/navbar";
-import SearchBar from "components/SearchBar/search-bar";
-import Home from "pages/Home/home";
+import AppRouter from "routes";
 
 function App() {
   return (
-    <>
-      <Navbar />
-      <SearchBar/>
-      <Home />
-    </>
+    <AppRouter />
   );
 }
 

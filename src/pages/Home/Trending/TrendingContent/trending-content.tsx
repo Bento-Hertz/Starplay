@@ -1,20 +1,19 @@
-/* eslint-disable react-hooks/exhaustive-deps */
-import Movie from 'interfaces/IMovie';
-import style from './trend-movie.module.scss';
+import IContent from 'interfaces/IContent';
+import style from './trending-content.module.scss';
 import { useEffect, useState } from 'react';
 import bookmarkIcon from 'assets/icon-bookmark-empty.svg';
 import classNames from 'classnames';
 
 interface Props {
-    movie: Movie;
+    content: IContent;
     id: number;
     firstChild?: boolean;
     lastChild?: boolean;
 }
 
-export default function TrendMovie(props: Props) {
+export default function TrendingContent(props: Props) {
 
-    const {title, releaseDate, ageRestriction, category, images} = props.movie;
+    const {title, releaseDate, ageRestriction, category, images} = props.content;
     const {id, firstChild=false, lastChild=false} = props;
 
     const [currentImage, setCurrentImage] = useState('');
@@ -40,15 +39,16 @@ export default function TrendMovie(props: Props) {
         return () => {
             window.removeEventListener('resize', setImgSize);
         }
+    // eslint-disable-next-line react-hooks/exhaustive-deps
     },[]);
 
     return (
         <div id={strId} className={classNames({
-            [style.movie]: true,
-            [style.movie__firstChild]: firstChild,
-            [style.movie__lastChild]: lastChild
+            [style.content]: true,
+            [style.content__firstChild]: firstChild,
+            [style.content__lastChild]: lastChild
         })}>
-            <div className={style.movieImage}>
+            <div className={style.contentImage}>
                 <img src={currentImage} alt="" />
             </div>
             <div className={style.info}>

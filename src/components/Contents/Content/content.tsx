@@ -1,13 +1,13 @@
-import IMovie from 'interfaces/IMovie';
-import style from './movie.module.scss';
+import style from './content.module.scss';
 import bookmarkIcon from 'assets/icon-bookmark-empty.svg';
+import IContent from 'interfaces/IContent';
 
-export default function Movie(props: IMovie) {
+export default function Content(props: IContent) {
 
     const {title, releaseDate, ageRestriction, category, images} = props;
 
     return (
-        <div className={style.movie}>
+        <div className={style.content}>
             <div className={style.image}>
                 <img src={images.regular} alt="" />
             </div>

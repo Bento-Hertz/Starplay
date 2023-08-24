@@ -1,4 +1,4 @@
-export default interface IMovie {
+export default interface IContent {
     title: string;
     releaseDate: string;
     ageRestriction: string;

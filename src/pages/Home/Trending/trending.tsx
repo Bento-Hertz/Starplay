@@ -1,15 +1,15 @@
 import { useState } from 'react';
-import TrendMovie from './TrendMovie/trend-movie';
 import style from './trending.module.scss';
-import movies from 'data/movies.json';
+import contentList from 'data/contents.json';
 import ScrollButton from './ScrollButton/scroll-button';
+import TrendingContent from './TrendingContent/trending-content';
 
 export default function Trending() {
 
-    const [currentMovieId, setCurrentMovieId] = useState('0');
+    const [currentContentId, setCurrentContentId] = useState('0');
     
-    //filtering movies when loading this component
-    const trendMovies = movies.filter(movie => movie.trending === true); 
+    //filtering contents when loading this component
+    const trendingList = contentList.filter(content => content.trending === true); 
 
     return (
         <section className={style.trending}>
@@ -17,28 +17,28 @@ export default function Trending() {
 
             <ScrollButton 
                 type='scrollBack' 
-                limitOfIds={trendMovies.length-1} 
-                currentId={currentMovieId} 
-                whenUpdated={(id) => setCurrentMovieId(id)}
+                limitOfIds={trendingList.length-1} 
+                currentId={currentContentId} 
+                whenUpdated={(id) => setCurrentContentId(id)}
             />
 
-            <div id='movies' className={style.movies}>
-                {trendMovies.map((movie, index) => {
+            <div id='contents' className={style.contents}>
+                {trendingList.map((content, index) => {
                     if(index === 0) 
-                        return <TrendMovie key={movie.title} id={index} firstChild={true} movie={movie}/>;
-                    else if(index === trendMovies.length - 1)
-                        return <TrendMovie key={movie.title} id={index} lastChild={true} movie={movie}/>;
+                        return <TrendingContent key={content.title} id={index} firstChild={true} content={content}/>;
+                    else if(index === trendingList.length - 1)
+                        return <TrendingContent key={content.title} id={index} lastChild={true} content={content}/>;
                     else
-                        return <TrendMovie key={movie.title} id={index} movie={movie}/>;;
+                        return <TrendingContent key={content.title} id={index} content={content}/>;;
                     }
                 )}
             </div>
 
             <ScrollButton 
                 type='scrollFront' 
-                limitOfIds={trendMovies.length-1} 
-                currentId={currentMovieId} 
-                whenUpdated={(id) => setCurrentMovieId(id)}
+                limitOfIds={trendingList.length-1} 
+                currentId={currentContentId} 
+                whenUpdated={(id) => setCurrentContentId(id)}
             />
 
         </section>

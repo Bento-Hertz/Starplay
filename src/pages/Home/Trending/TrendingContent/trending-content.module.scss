@@ -1,6 +1,6 @@
 @import 'styles/_variables.scss';
 
-.movie {
+.content {
     position: relative;
     margin: 0 8px;
     @media(min-width: $tablet) {
@@ -35,7 +35,7 @@
     }
 }
 
-.movieImage {
+.contentImage {
     width: 240px;
     height: 142.4px;
     @media(min-width: $tablet) {

@@ -69,13 +69,12 @@ img {
 body {
   height: 100%;
   background-color: $dark-blue;
-  padding-top: 58.8px;
+  padding: 58.8px 0 16px 0;
   @media(min-width: $tablet) {
-    padding-top: 106.4px;
+    padding: 106.4px 0 24px 0;
   }
   @media(min-width: $desktop) {
-    padding-top: 56px;
-    padding-left: 120px;
+    padding: 56px 0 32px 120px;
   }
 }
 
