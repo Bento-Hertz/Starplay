@@ -3,6 +3,7 @@ export default interface IContent {
     releaseDate: string;
     ageRestriction: string;
     trending: boolean;
+    bookmarked: boolean;
     category: {
         name: string;
         icon: string;

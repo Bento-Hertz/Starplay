@@ -2,14 +2,14 @@ import Contents from "components/Contents/contents";
 import { useSelector } from 'react-redux';
 import { useContents } from "redux/slices/sliceContents";
 
-export default function Movies() {
+export default function Bookmarked() {
 
     const contentList = useSelector(useContents);
-    const movies = contentList.filter(content => content.category.name === 'Movie') ;
+    const bookmarkedList = contentList.filter(content => content.bookmarked === true);
 
     return (
         <main>
-            <Contents category='Movies' contentList={movies}/>
+            <Contents category='Bookmarked' contentList={bookmarkedList}/>
         </main>
     );
 }

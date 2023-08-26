@@ -2,7 +2,10 @@ import IContent from 'interfaces/IContent';
 import style from './trending-content.module.scss';
 import { useEffect, useState } from 'react';
 import bookmarkIcon from 'assets/icon-bookmark-empty.svg';
+import activeBookmarkIcon from 'assets/icon-bookmark-full.svg';
 import classNames from 'classnames';
+import { useDispatch } from 'react-redux';
+import { bookmark } from 'redux/slices/sliceContents';
 
 interface Props {
     content: IContent;
@@ -13,12 +16,14 @@ interface Props {
 
 export default function TrendingContent(props: Props) {
 
-    const {title, releaseDate, ageRestriction, category, images} = props.content;
+    const {title, releaseDate, bookmarked, ageRestriction, category, images} = props.content;
     const {id, firstChild=false, lastChild=false} = props;
 
     const [currentImage, setCurrentImage] = useState('');
     
     const strId = `${id}`;
+
+    const dispatch = useDispatch();
 
     //changes state of currentImage based on the media query's breakpoint
     const setImgSize = () => {
@@ -52,8 +57,8 @@ export default function TrendingContent(props: Props) {
                 <img src={currentImage} alt="" />
             </div>
             <div className={style.info}>
-                <button className={style.bookmark}>
-                    <img src={bookmarkIcon} alt="bookmark" />
+                <button className={style.bookmark} onClick={() => dispatch(bookmark(title))}>
+                    <img src={bookmarked ? activeBookmarkIcon : bookmarkIcon} alt="bookmark" />
                 </button>
                 <div className={style.description}>
                     <span>{releaseDate}</span>

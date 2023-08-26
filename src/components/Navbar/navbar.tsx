@@ -10,8 +10,27 @@ import activeHomeIcon from 'assets/navbar/active/icon-nav-home.svg';
 import activeMoviesIcon from 'assets/navbar/active/icon-nav-movies.svg';
 import activeTvSeriesIcon from 'assets/navbar/active/icon-nav-tv-series.svg';
 import activeBookmarkIcon from 'assets/navbar/active/icon-nav-bookmark.svg';
+import { useEffect, useState } from 'react';
+import { bookmark } from 'redux/slices/sliceContents';
 
 export default function Navbar() {
+
+    const [activePage, setActivePage] = useState('');
+    
+    const location = useLocation().pathname;
+    //sets an active icon based on the current location
+    useEffect(() => {
+        if(location.includes('/movies'))
+            setActivePage('movies');
+        else if(location.includes('/tv-series'))
+            setActivePage('tv-series');
+        else if(location.includes('/bookmarked'))
+            setActivePage('bookmarked');
+        else
+            setActivePage('home');
+    }, [location]);
+
+
 
     return (
         <nav className={style.navbar}>
@@ -21,39 +40,23 @@ export default function Navbar() {
             <ul>
                 <li>
                     <Link to='/'>
-                        {true ?
-                            <img src={homeIcon} alt="home" />
-                        : 
-                            <img src={activeHomeIcon} alt="home" />
-                        }
+                        <img src={activePage==='home' ? activeHomeIcon : homeIcon} alt="home" />
                     </Link>
                 </li>
                 <li>
                     <Link to='movies'>
-                        {true ?
-                            <img src={moviesIcon} alt="movies" />
-                        : 
-                            <img src={activeMoviesIcon} alt="movies" />
-                        }
+                        <img src={activePage==='movies' ? activeMoviesIcon : moviesIcon} alt="movies" />
                     </Link>
                 </li>
                 <li>
                     <Link to='tv-series'>
-                        {true ?
-                            <img src={tvSeriesIcon} alt="tv series" />
-                        : 
-                            <img src={activeTvSeriesIcon} alt="tv series" />
-                        }
+                        <img src={activePage==='tv-series' ? activeTvSeriesIcon : tvSeriesIcon} alt="tv series" />
                     </Link>
                 </li>
                 <li>
-                    <a href='typescript:void(0)'>
-                        {true ?
-                            <img src={bookmarkIcon} alt="bookmarked" />
-                        : 
-                            <img src={activeBookmarkIcon} alt="bookmarked" />
-                        }
-                    </a>
+                    <Link to='bookmarked'>
+                        <img src={activePage==='bookmarked' ? activeBookmarkIcon : bookmarkIcon} alt="bookmarked" />
+                    </Link>
                 </li>
             </ul>
             <a className={style.profileIcon} href='typescript:void(0)'>
