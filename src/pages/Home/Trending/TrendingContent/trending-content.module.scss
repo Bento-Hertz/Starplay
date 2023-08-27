@@ -84,6 +84,14 @@
             padding: 12px;
         }
     }
+    .bookmark:hover {
+        scale: 1.1;
+        transition: 0.25s;
+    }
+    .bookmark:active {
+        scale: 1;
+        background-color: $dark-blue;
+    }
     .description {
         display: flex;
         align-items: center;

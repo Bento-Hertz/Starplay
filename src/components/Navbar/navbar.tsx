@@ -11,7 +11,6 @@ import activeMoviesIcon from 'assets/navbar/active/icon-nav-movies.svg';
 import activeTvSeriesIcon from 'assets/navbar/active/icon-nav-tv-series.svg';
 import activeBookmarkIcon from 'assets/navbar/active/icon-nav-bookmark.svg';
 import { useEffect, useState } from 'react';
-import { bookmark } from 'redux/slices/sliceContents';
 
 export default function Navbar() {
 
@@ -26,6 +25,8 @@ export default function Navbar() {
             setActivePage('tv-series');
         else if(location.includes('/bookmarked'))
             setActivePage('bookmarked');
+        else if(location.includes('/search'))
+            setActivePage('');
         else
             setActivePage('home');
     }, [location]);

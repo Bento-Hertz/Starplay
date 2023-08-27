@@ -1,14 +1,17 @@
 import { useState } from 'react';
 import style from './trending.module.scss';
-import contentList from 'data/contents.json';
 import ScrollButton from './ScrollButton/scroll-button';
 import TrendingContent from './TrendingContent/trending-content';
+import { useSelector } from 'react-redux';
+import { useContents } from 'redux/slices/sliceContents';
 
 export default function Trending() {
 
     const [currentContentId, setCurrentContentId] = useState('0');
     
     //filtering contents when loading this component
+
+    const contentList = useSelector(useContents);
     const trendingList = contentList.filter(content => content.trending === true); 
 
     return (

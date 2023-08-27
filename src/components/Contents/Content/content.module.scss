@@ -37,6 +37,14 @@
     border-radius: 50%;
     background-color: $transparent-dark-blue;
 }
+.bookmark:hover {
+    scale: 1.1;
+    transition: 0.25s;
+}
+.bookmark:active {
+    scale: 1;
+    background-color: $dark-blue;
+}
 
 
 .description {
