@@ -15,7 +15,11 @@ export default function SearchedContents({ search }: Props) {
     if(search.length > 0)
         return (
             <main> 
-                <Contents category={`Results for "${search}"`} contentList={searchFilter}/>
+                {searchFilter.length > 0 ?
+                    <Contents category={`Results for "${search}"`} contentList={searchFilter}/>
+                :
+                    <Contents category={`Sorry, no results were found for "${search}"`} contentList={searchFilter}/>
+                }
             </main>
         );
     else
