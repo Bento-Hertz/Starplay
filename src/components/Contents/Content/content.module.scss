@@ -114,8 +114,10 @@
     background-color: $transparent-dark-blue;
 }
 .bookmark:hover {
-    scale: 1.1;
-    transition: 0.25s;
+    @media(min-width: $desktop) {
+        scale: 1.1;
+        transition: 0.25s;
+    }
 }
 .bookmark:active {
     scale: 0.9;
