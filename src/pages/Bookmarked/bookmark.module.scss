@@ -1,0 +1,13 @@
+@import 'styles/variables';
+
+.emptyList {
+    font-size: 20px;
+    margin: 0 16px;
+    @media(min-width: $tablet) {
+        margin: 0 24px;
+        font-size: 24px;
+    }
+    @media(min-width: $desktop) {
+        margin: 0 32px;
+    }
+}
