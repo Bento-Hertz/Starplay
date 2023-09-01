@@ -3,6 +3,7 @@
 .content {
     position: relative;
     margin: 0 8px;
+    cursor: pointer;
     @media(min-width: $tablet) {
         margin: 0 12px;
     }
@@ -35,14 +36,15 @@
     }
 }
 
-.contentImage {
+.imageContainer {
     width: 240px;
     height: 142.4px;
+    position: relative;
     @media(min-width: $tablet) {
         width: 470px;
         height: 234.4px;
     }
-    img {
+    .contentImage {
         border-radius: 8px;
     }
 }
@@ -64,7 +66,25 @@
             font-size: 24px;
         }
     }
+    .play {
+        z-index: 1;
+        opacity: 0;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        display: flex;
+        gap: 8px;
+        padding: 8px;
+        border-radius: 16px;
+        background-color: $transparent-white;
+        img {
+            width: 20px;
+            height: 20px;
+        }
+    }
     .bookmark {
+        z-index: 1;
         position: absolute;
         top: 8px;
         right: 8px;
@@ -128,4 +148,31 @@
             }
         }
     }
+}
+
+.info:hover {
+    @media(min-width: $desktop) {
+        .play {
+            opacity: 1;
+            transition: 0.5s;
+        }
+    }
+}
+
+
+.info::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: block;
+    width: 100%;
+    height: calc(100% - 4px);
+    transition: 0.5s;
+    border-radius: 8px;
+}
+
+.info:hover::after {
+    background-color: #0000007c;
+    transition: 0.5s;
 }

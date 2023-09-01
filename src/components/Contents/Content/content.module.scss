@@ -1,28 +1,102 @@
 @import 'styles/_variables.scss';
 
+.container {
+    position: relative;
+    cursor: pointer;
+}
+
 .content {
     position: relative;
     display: grid;
     gap: 8px;
+    border-radius: 8px;
     @media(min-width: $tablet) {
-        h3 {
-            font-size: 24px;
+        .title {
+            font-size: 20px;
+            line-height: 1.2;
         }
     }
 }
 
-.image {
+.content:hover {
+    @media(min-width: $desktop) {
+        position: absolute;
+        width: 100%;
+        scale: 1.1;
+        transition: 0.25s;
+        background-color: #080a0f;
+        z-index: 1;
+        .image, .description, .title {
+            transition: 0.25s;
+        }
+        .image {
+            border-bottom-left-radius: 0;
+            border-bottom-right-radius: 0;
+        }
+        .description {
+            margin: 8px 16px 0;
+        }
+        .title {
+            margin: 0 16px 16px;
+        }
+    }
+}
+
+.imageContainer {
     overflow: hidden;
     border-radius: 8px;
     padding-top: 65%;
     position: relative;
-    img {
+    .play {
+        z-index: -1;
+        opacity: 0;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        display: flex;
+        gap: 8px;
+        padding: 8px;
+        border-radius: 16px;
+        background-color: $transparent-white;
+        img {
+            width: 20px;
+            height: 20px;
+        }
+    }
+    .contentImage {
         position: absolute;
         top: 0;
         left: 0;
         width: 100%;
         height: 100%;
     }
+}
+
+.imageContainer:hover {
+    @media(min-width: $desktop) {
+        .play {
+            z-index: 1;
+            opacity: 1;
+            transition: 0.5s;
+        }
+    }
+}
+
+.imageContainer::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: block;
+    width: 100%;
+    height: 100%;
+    transition: 0.5s;
+}
+
+.imageContainer:hover::after {
+    background-color: #0000007c;
+    transition: 0.5s;
 }
 
 .bookmark {
@@ -42,7 +116,7 @@
     transition: 0.25s;
 }
 .bookmark:active {
-    scale: 1;
+    scale: 0.9;
     background-color: $dark-blue;
 }
 

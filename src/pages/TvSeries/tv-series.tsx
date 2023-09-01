@@ -5,7 +5,7 @@ import { useContents } from 'redux/slices/sliceContents';
 export default function TvSeries() {
 
     const contentList = useSelector(useContents);
-    const tvSeries = contentList.filter(content => content.category.name === 'TV Series');
+    const tvSeries = contentList.filter(content => content.category.name === 'TVS');
 
     return (
         <main>

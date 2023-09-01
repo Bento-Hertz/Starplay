@@ -42,7 +42,7 @@
         "trending": true,
         "bookmarked": false,
         "category": {
-            "name": "TV Series",
+            "name": "TVS",
             "icon": "assets/icon-category-tv.svg"
         },
         "images": {
@@ -78,7 +78,7 @@
         "trending": true,
         "bookmarked": false,
         "category": {
-            "name": "TV Series",
+            "name": "TVS",
             "icon": "assets/icon-category-tv.svg"
         },
         "images": {
@@ -110,7 +110,7 @@
         "trending": false,
         "bookmarked": false,
         "category": {
-            "name": "TV Series",
+            "name": "TVS",
             "icon": "assets/icon-category-tv.svg"
         },
         "images": {
@@ -152,7 +152,7 @@
         "trending": false,
         "bookmarked": false,
         "category": {
-            "name": "TV Series",
+            "name": "TVS",
             "icon": "assets/icon-category-tv.svg"
         },
         "images": {
@@ -166,7 +166,7 @@
         "trending": false,
         "bookmarked": false,
         "category": {
-            "name": "TV Series",
+            "name": "TVS",
             "icon": "assets/icon-category-tv.svg"
         },
         "images": {
@@ -194,7 +194,7 @@
         "trending": false,
         "bookmarked": false,
         "category": {
-            "name": "TV Series",
+            "name": "TVS",
             "icon": "assets/icon-category-tv.svg"
         },
         "images": {
@@ -208,7 +208,7 @@
         "trending": false,
         "bookmarked": false,
         "category": {
-            "name": "TV Series",
+            "name": "TVS",
             "icon": "assets/icon-category-tv.svg"
         },
         "images": {
@@ -236,7 +236,7 @@
         "trending": false,
         "bookmarked": false,
         "category": {
-            "name": "TV Series",
+            "name": "TVS",
             "icon": "assets/icon-category-tv.svg"
         },
         "images": {
@@ -306,7 +306,7 @@
         "trending": false,
         "bookmarked": false,
         "category": {
-            "name": "TV Series",
+            "name": "TVS",
             "icon": "assets/icon-category-tv.svg"
         },
         "images": {
@@ -334,7 +334,7 @@
         "trending": false,
         "bookmarked": false,
         "category": {
-            "name": "TV Series",
+            "name": "TVS",
             "icon": "assets/icon-category-tv.svg"
         },
         "images": {
@@ -348,7 +348,7 @@
         "trending": false,
         "bookmarked": false,
         "category": {
-            "name": "TV Series",
+            "name": "TVS",
             "icon": "assets/icon-category-tv.svg"
         },
         "images": {
@@ -362,7 +362,7 @@
         "trending": false,
         "bookmarked": false,
         "category": {
-            "name": "TV Series",
+            "name": "TVS",
             "icon": "assets/icon-category-tv.svg"
         },
         "images": {
@@ -376,7 +376,7 @@
         "trending": false,
         "bookmarked": false,
         "category": {
-            "name": "TV Series",
+            "name": "TVS",
             "icon": "assets/icon-category-tv.svg"
         },
         "images": {
@@ -404,7 +404,7 @@
         "trending": false,
         "bookmarked": false,
         "category": {
-            "name": "TV Series",
+            "name": "TVS",
             "icon": "assets/icon-category-tv.svg"
         },
         "images": {

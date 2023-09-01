@@ -3,6 +3,7 @@ import style from './trending-content.module.scss';
 import { useEffect, useState } from 'react';
 import bookmarkIcon from 'assets/icon-bookmark-empty.svg';
 import activeBookmarkIcon from 'assets/icon-bookmark-full.svg';
+import playIcon from 'assets/icon-play.svg';
 import classNames from 'classnames';
 import { useDispatch } from 'react-redux';
 import { bookmark } from 'redux/slices/sliceContents';
@@ -53,10 +54,14 @@ export default function TrendingContent(props: Props) {
             [style.content__firstChild]: firstChild,
             [style.content__lastChild]: lastChild
         })}>
-            <div className={style.contentImage}>
-                <img src={currentImage} alt="" />
+            <div className={style.imageContainer}>
+                <img className={style.contentImage} src={currentImage} alt={title} />
             </div>
             <div className={style.info}>
+                <div className={style.play}>
+                    <img src={playIcon} alt="play" />
+                    <span>Play</span>
+                </div>
                 <button className={style.bookmark} onClick={() => dispatch(bookmark(title))}>
                     <img src={bookmarked ? activeBookmarkIcon : bookmarkIcon} alt="bookmark" />
                 </button>
