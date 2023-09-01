@@ -60,9 +60,9 @@ export default function Navbar() {
                     </Link>
                 </li>
             </ul>
-            <a className={style.profileIcon} href='typescript:void(0)'>
+            <div className={style.profileIcon}>
                 <img src={profileIcon} alt="profile avatar" />
-            </a>
+            </div>
         </nav>
     );
 }
