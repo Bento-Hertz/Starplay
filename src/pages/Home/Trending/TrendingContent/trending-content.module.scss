@@ -161,15 +161,17 @@
 
 
 .info::after {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 0;
-    display: block;
-    width: 100%;
-    height: calc(100% - 4px);
-    transition: 0.5s;
-    border-radius: 8px;
+    @media(min-width: $desktop) {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        display: block;
+        width: 100%;
+        height: calc(100% - 4px);
+        transition: 0.5s;
+        border-radius: 8px;
+    }
 }
 
 .info:hover::after {
