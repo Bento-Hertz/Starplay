@@ -113,6 +113,7 @@
     .bookmark:active {
         scale: 0.9;
         background-color: $dark-blue;
+        transition: 0.25s;
     }
     .description {
         display: flex;
